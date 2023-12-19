@@ -18,19 +18,16 @@ export default function ButtonAppBar() {
          <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+      
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign:'left' }}>
             News
           </Typography>
-          <a href="/signin" style={{color:"white"}}><Button color="inherit">Login</Button></a>
+          <a href="/aboutus" style={{color:"white"}}> <Button variant="contained">About Us</Button></a> 
+
+          <a href="/signin" style={{color:"white"}}> <Button variant="contained">Login</Button></a>
+          <a href="/signup" style={{color:"white"}}> <Button variant="contained">Sign Up</Button></a> 
+
+
           
         </Toolbar>
       </AppBar>
@@ -49,8 +46,8 @@ export default function ButtonAppBar() {
     
        
       }}
-      alt="The house from the offer."
-      src="https://media.istockphoto.com/id/1460535745/photo/e-learning-graduate-certificate-program-concept-lightbulb-on-the-book-with-graduation-hat-and.jpg?s=1024x1024&w=is&k=20&c=D-Pg0qUydCtivVeTploUNt6ytVJ3uTdHwLQmCGzZnxo=" /> 
+      alt="Learning Portal"
+      src="https://e1.pxfuel.com/desktop-wallpaper/130/168/desktop-wallpaper-online-learning-online-education.jpg" /> 
         
      
    </div>
