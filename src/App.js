@@ -7,6 +7,8 @@ import SignUp from './Pages/SignUp';
 import StickyFooter from './Pages/StickyFooter';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
+
+
 function App() {
   return (
     <div className="App">

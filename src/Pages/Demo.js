@@ -1,60 +1,72 @@
-
-
-
-
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import StickyFooter from './StickyFooter';
+import { Link } from 'react-router-dom';
 
-export default function ButtonAppBar() {
+const ButtonAppBar = () => {
+  const backgroundImage = 'https://images.shiksha.com/mediadata/images/articles/1584530781phpGCxT3N.jpeg'; // Replace with your image URL
+
+  const exploreButtonStyle = {
+    margin: '100px', // Adjust the margin as needed
+  };
+
   return (
     <div>
-         <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-      
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign:'left' }}>
-            News
-          </Typography>
-          <a href="/aboutus" style={{color:"white"}}> <Button variant="contained">About Us</Button></a> 
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left' }}>
+              News
+            </Typography>
+            <Link to="/home" style={{ color: 'white' }}>
+              <Button variant="contained">Home</Button>
+            </Link>
 
-          <a href="/signin" style={{color:"white"}}> <Button variant="contained">Login</Button></a>
-          <a href="/signup" style={{color:"white"}}> <Button variant="contained">Sign Up</Button></a> 
+            <Link to="/aboutus" style={{ color: 'white' }}>
+              <Button variant="contained">About Us</Button>
+            </Link>
 
+            <Link to="/signin" style={{ color: 'white' }}>
+              <Button variant="contained">Login</Button>
+            </Link>
+            <Link to="/signup" style={{ color: 'white' }}>
+              <Button variant="contained">Sign Up</Button>
+            </Link>
+          </Toolbar>
+        </AppBar>
+      </Box>
 
+      <div
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '800px', // Adjust the height as needed
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <div>
+          <Typography variant="h3" component="div" style={{ color: 'white' }}>
           
-        </Toolbar>
-      </AppBar>
-    </Box>
+            Explore Now
+          </Typography>
+          <Link to="/signin" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" style={{exploreButtonStyle, fontSize:'40px'}}>
+              Get Started
+            </Button>
+          </Link>
+        </div>
+      </div>
 
-
-   <div>
-   <Box
-      
-    
-      component="img"
-      sx={{
-        height: "100%",
-        width:"100%",
-        padding: 0,
-    
-       
-      }}
-      alt="Learning Portal"
-      src="https://e1.pxfuel.com/desktop-wallpaper/130/168/desktop-wallpaper-online-learning-online-education.jpg" /> 
-        
-     
-   </div>
-
-<StickyFooter/>
+      <StickyFooter />
     </div>
-    
-   
   );
-}
+};
+
+export default ButtonAppBar;

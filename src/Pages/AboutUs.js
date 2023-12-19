@@ -6,10 +6,43 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Container, Grid } from '@mui/material';
+import Button from '@mui/material/Button';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Paper from '@mui/material/Paper';
+import ButtonBase from '@mui/material/ButtonBase';
+import App from '../App';
+import { styled } from '@mui/material/styles';
 
+
+ 
 const AboutUs = () => {
   return (
+    <div>
+    <Box sx={{ flexGrow: 1 }}>
+ <AppBar position="static">
+   <Toolbar>
+ 
+     <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign:'left' }}>
+       News
+     </Typography>
+     <a href="/home" style={{color:"white"}}> <Button variant="contained">Home</Button></a> 
+
+     <a href="/aboutus" style={{color:"white"}}> <Button variant="contained">About Us</Button></a> 
+
+     <a href="/signin" style={{color:"white"}}> <Button variant="contained">Login</Button></a>
+     <a href="/signup" style={{color:"white"}}> <Button variant="contained">Sign Up</Button></a> 
+
+
+     
+   </Toolbar>
+ </AppBar>
+</Box>
+
+
+
     <div style={{backgroundColor:'skyblue', padding:'10px'}}>
       <h1>About Us</h1>
       <p>
@@ -17,51 +50,7 @@ const AboutUs = () => {
         committed to providing high-quality learning resources to help you
         succeed in your learning journey.
       </p>
-      <Card sx={{ maxWidth: 500, 
-    flex:'1'}}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image=""
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card sx={{ maxWidth: 500 ,
-     
-        display: 'flex',
-        justifyContent: 'space-between',
-        gap: '50px', 
-      
-    }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    
       <p>
         Our team of experienced educators and developers work together to
         create engaging content and a user-friendly platform for learners of
@@ -73,9 +62,10 @@ const AboutUs = () => {
         educational adventure!
       </p>
       <StickyFooter/>
-
-    </div>
+      </div>
+</div>
   );
 };
+
 
 export default AboutUs;
