@@ -66,12 +66,12 @@ import './BasicCard.css';
         <CardMedia
           component="img"
           height="200"
-          image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVmxAUQPSs_WIbDje10Rx7nFhDY5OZf7h3sOS0pjGfSwxJBRmbO2zJmFIARGvoiw7Z7U&usqp=CAU'
+          image='https://logodix.com/logo/374736.png'
           alt="HTML"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Learn HTML
+            Learn JAVASCRIPT
           </Typography>
         
         </CardContent>
@@ -108,7 +108,7 @@ import './BasicCard.css';
 
 
     
-    <Card sx={{ maxWidth: 345 }}>
+    <Card id="img4" sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"

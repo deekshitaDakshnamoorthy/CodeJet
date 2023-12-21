@@ -10,7 +10,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="/home">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -47,7 +47,7 @@ export default function StickyFooter() {
         >
           <Container maxWidth="sm">
             <Typography variant="body1">
-              My sticky footer can be found here.
+              All Rights Reserved. Deep Learn Powered by Deeksh.
             </Typography>
             <Copyright />
           </Container>

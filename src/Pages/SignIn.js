@@ -113,7 +113,7 @@ export default function SignInSide() {
                 Sign In
               </Button></a>
               <Grid container>
-                <Grid item xs>
+                <Grid item xs style={{textAlign:'left'}}>
                   <Link href="#" variant="body2">
                     Forgot password?
                   </Link>

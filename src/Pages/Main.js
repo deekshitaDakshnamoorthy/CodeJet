@@ -168,7 +168,7 @@ export default function Main() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Learning Portal
+            Deep Learn
           </Typography>
           <Search>
             <SearchIconWrapper>

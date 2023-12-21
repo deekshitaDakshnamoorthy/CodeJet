@@ -17,7 +17,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="/home">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -41,7 +41,7 @@ export default function SignUp() {
   };
 
   return (
-    <div style={{backgroundColor:'skyblue',padding:'100px'}}>
+    <div style={{backgroundColor:'skyblue',padding:'95px',paddingTop:'5px'}}>
 
     
     <ThemeProvider theme={defaultTheme}>
@@ -53,7 +53,7 @@ export default function SignUp() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            
+            backgroundColor:'#A4DDED',
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -109,7 +109,7 @@ export default function SignUp() {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="Always Remember me."
                 />
               </Grid>
             </Grid>
