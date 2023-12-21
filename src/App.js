@@ -15,24 +15,26 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-<BasicCard/>
-      {/* <BrowserRouter>
+{/* <BasicCard/> */}
+        <BrowserRouter>
       <Routes>
         <Route index element={<Demo/>}/>
         <Route path='/signin' element={<SignIn/>}/>
         <Route path='/home' element={<Demo/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
+        <Route path='/main' element={<Main/>  }/>
+
       </Routes>
       
       
       
       
-      </BrowserRouter> */}
+      </BrowserRouter>  
      
 {/* <Demo/> */}
 {/* <SignIn/> */}
- {/* <Main/>  */}
+  
 
     </div>
   );

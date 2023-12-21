@@ -5,12 +5,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
 import './BasicCard.css';
-export default function BasicCard() {
-  return (
-    <div 
-    style={{paddingTop:'250px',display:"flex",alignItems:"center",justifyContent:"center",padding:'50px'}}>
-      <div>
 
+
+ export default function BasicCard() {
+  return (
+    
+    <div class="Card"
+    
+    style={{paddingTop:'300px',display:"flex",alignItems:"center",justifyContent:"center",padding:'50px'}}>
       
     <Card  sx={{ maxWidth: 345,width:'300px'}}>
       <CardActionArea>
@@ -33,8 +35,8 @@ export default function BasicCard() {
         </Button>
       </CardActions>
     </Card>
-    </div>
-    <div>
+    
+    
 
     <Card id="img" sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -57,8 +59,7 @@ export default function BasicCard() {
         </Button>
       </CardActions>
     </Card>
-    </div>
-<div>
+  
 
     <Card id="img2" sx={{ maxWidth:345}}>
       <CardActionArea>
@@ -81,8 +82,7 @@ export default function BasicCard() {
         </Button>
       </CardActions>
     </Card>
-</div>
-    <div>
+
 
     <Card id="img1" sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -105,8 +105,7 @@ export default function BasicCard() {
         </Button>
       </CardActions>
     </Card>
-    </div>
-<div>
+
 
     
     <Card sx={{ maxWidth: 345 }}>
@@ -130,7 +129,7 @@ export default function BasicCard() {
         </Button>
       </CardActions>
     </Card>
-    </div>
+    
 
     </div>
 
