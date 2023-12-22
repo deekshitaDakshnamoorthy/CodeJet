@@ -18,7 +18,13 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import BasicCard from './BasicCard';
 import StickyFooter from './StickyFooter';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';const Search = styled('div')(({ theme }) => ({
+import Button from '@mui/material/Button';
+import DownloadIcon from '@mui/icons-material/Download';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+
+
+const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -58,7 +64,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function Main() {
+export default function MainC() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -99,8 +105,8 @@ export default function Main() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
-      <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
+      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+ <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
     </Menu>
   );
 
@@ -157,9 +163,9 @@ export default function Main() {
   );
 
   return (
-    <div style={{backgroundColor:'skyblue'}}>
+    <div style={{backgroundColor:'#E6E6FA'}}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor:'#452c63'}}>
         <Toolbar>
           
           <Typography
@@ -224,12 +230,53 @@ export default function Main() {
       {renderMobileMenu}
       {renderMenu}
     </Box>
-    <Typography>
-      <h3 style={{fontFamily:"revert-laye",fontSize:'50px'}}>
-        Don't Just Watch. Let's Start to Learn!
-      </h3>
+    <Typography sx={{paddingBottom:'50px'}}>
+        <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> C Tutorial:</h1>
+        <div>
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Get Started With C</h2>
+<h4 style={{textAlign:'left'}}>To start using C, you need two things:</h4>
+<ul>
+<li style={{textAlign:'left',marginLeft:'250px'}}>A text editor, like Notepad, to write C code</li>
+<li style={{textAlign:'left',marginLeft:'250px'}}>A compiler, like GCC, to translate the C code into a
+language that the computer will understand</li></ul>
+There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
+
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>C Install IDE</h2>
+<ul>An IDE (Integrated Development Environment) is used to edit AND compile the code.
+
+Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.</ul>
+
+<ul>Note: Web-based IDE's can work as well, but functionality is limited.</ul>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Dev C++</h2>
+You can find the latest version  of Dev C++. Click Download button  which will install the text editor with a compiler.
+
+
+</p>
+
+<a href="https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_setup.exe/download"><Button style={{backgroundColor:'#662d91',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+  Download now <DownloadIcon sx={{fontSize:'40px'}}/>
+</Button></a>
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn C </h2>
+Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn C.
+</p>
+<a href="https://www.youtube.com/watch?v=i0ovgS-jCQ8"><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+  Youtube link <YouTubeIcon sx={{fontSize:'50px'}}/>
+</Button></a>
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Click here to Download Material </h2>
+You can have full C programming Notes here. Click Download Notes button to get the notes and learn C.
+</p>
+<a href="https://drive.google.com/file/d/1UJUtN06VBfSe62Alk69CfTnrXenAPG1o/view?usp=drive_link"><Button style={{backgroundColor:'#800080',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+  Download Notes <CloudDownloadIcon sx={{fontSize:'50px'}}/>
+</Button></a>
+        </div>
     </Typography>
-    <BasicCard/>
+
+   
     <StickyFooter/>
     </div>
   );

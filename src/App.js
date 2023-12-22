@@ -5,6 +5,7 @@ import BasicCard from './Pages/BasicCard';
 import DrawerAppBar from './Pages/Demo';
 import Demo from './Pages/Demo';
 import Main from './Pages/Main';
+import MainC from './Pages/MainC';
 import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
 import StickyFooter from './Pages/StickyFooter';
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
 {/* <BasicCard/> */}
-        <BrowserRouter>
+         <BrowserRouter>
       <Routes>
         <Route index element={<Demo/>}/>
         <Route path='/signin' element={<SignIn/>}/>
@@ -24,17 +25,16 @@ function App() {
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/main' element={<Main/>  }/>
-
+        <Route path='/c' element={<MainC/>  }/>
       </Routes>
       
       
       
-      
-      </BrowserRouter>  
+      </BrowserRouter>   
      
 {/* <Demo/> */}
 {/* <SignIn/> */}
-  
+ {/* <MainC/>    */}
 
     </div>
   );

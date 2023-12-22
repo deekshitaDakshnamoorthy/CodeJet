@@ -31,9 +31,9 @@ const AboutUs = () => {
      <a href="/home" style={{color:"white"}}> <Button variant="contained">Home</Button></a> 
 
      <a href="/aboutus" style={{color:"white"}}> <Button variant="contained">About Us</Button></a> 
+     <a href="/signup" style={{color:"white"}}> <Button variant="contained">Sign Up</Button></a> 
 
      <a href="/signin" style={{color:"white"}}> <Button variant="contained">Login</Button></a>
-     <a href="/signup" style={{color:"white"}}> <Button variant="contained">Sign Up</Button></a> 
 
 
      

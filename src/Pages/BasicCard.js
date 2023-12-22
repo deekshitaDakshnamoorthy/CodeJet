@@ -30,9 +30,9 @@ import './BasicCard.css';
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <a href="/c"><Button size="small" color="primary">
           Get Start
-        </Button>
+        </Button></a>
       </CardActions>
     </Card>
     
@@ -118,7 +118,7 @@ import './BasicCard.css';
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Learn PYTHON
+          Learn PYTHON
           </Typography>
           
         </CardContent>
