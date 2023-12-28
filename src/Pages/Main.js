@@ -18,7 +18,10 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import BasicCard from './BasicCard';
 import StickyFooter from './StickyFooter';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';const Search = styled('div')(({ theme }) => ({
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+
+const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -121,26 +124,8 @@ export default function Main() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
+      
+     
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -149,7 +134,8 @@ export default function Main() {
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle />
+         
+        
         </IconButton>
         <p>Profile</p>
       </MenuItem>
@@ -181,20 +167,8 @@ export default function Main() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+           
+        
             <IconButton
               size="large"
               edge="end"
@@ -204,6 +178,7 @@ export default function Main() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
+              <a href='/home'><HomeRoundedIcon sx={{color:'white'}}/></a> 
               <AccountCircle />
             </IconButton>
           </Box>

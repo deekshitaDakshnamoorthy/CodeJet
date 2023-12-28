@@ -10,7 +10,7 @@ import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
 import StickyFooter from './Pages/StickyFooter';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-
+import MainJava from './Pages/MainJava';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/main' element={<Main/>  }/>
         <Route path='/c' element={<MainC/>  }/>
+        <Route path='/java' element={<MainJava/>  }/>
       </Routes>
       
       
