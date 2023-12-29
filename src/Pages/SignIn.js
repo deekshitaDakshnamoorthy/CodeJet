@@ -45,7 +45,7 @@ export default function SignInSide() {
   };
 
   return (
-    <div style={{backgroundColor:'skyblue'}}>
+    <div style={{backgroundColor:'#3E8EDE'}}>
     <ThemeProvider theme={defaultTheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
@@ -63,7 +63,7 @@ export default function SignInSide() {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square sx={{backgroundColor:'skyblue'}}>
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square sx={{backgroundColor:'#89CFF0'}}>
           <Box
             sx={{
               my: 8,
@@ -76,7 +76,7 @@ export default function SignInSide() {
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
+            <Typography sx={{fontFamily:'cursive',fontSize:'30px'}} component="h1" variant="h5">
               Sign in
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>

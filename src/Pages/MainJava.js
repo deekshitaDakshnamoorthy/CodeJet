@@ -22,6 +22,8 @@ import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -105,7 +107,7 @@ export default function MainC() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
  <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
     </Menu>
   );
@@ -127,26 +129,8 @@ export default function MainC() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
+     
+     
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -159,13 +143,24 @@ export default function MainC() {
         </IconButton>
         <p>Profile</p>
       </MenuItem>
+      <MenuItem>
+        <IconButton
+          size="large"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <LogoutSharpIcon/>
+          
+        </IconButton>
+        <p>Logout</p>
+      </MenuItem>
     </Menu>
   );
 
   return (
-    <div style={{backgroundColor:'#E6E6FA'}}>
+    <div style={{backgroundColor:'#D0F0C0'}}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor:'green'}}>
+      <AppBar position="static" sx={{backgroundColor:'#40a829'}}>
         <Toolbar>
           
           <Typography
@@ -187,20 +182,22 @@ export default function MainC() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
+            
+          <a href="/home">
+          <IconButton
+          sx={{color:"white"}}
               size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
+              edge="end"
+              aria-label="account of current user"
+              
+              aria-haspopup="true"
+              
+              color="white"
+            >  
+              <HomeRoundedIcon/>
             </IconButton>
+          </a>
+         
             <IconButton
               size="large"
               edge="end"
@@ -234,35 +231,56 @@ export default function MainC() {
         <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> JAVA Tutorial:</h1>
         <div>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Get Started With C</h2>
-<h4 style={{textAlign:'left'}}>To start using C, you need two things:</h4>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Get Started With JAVA</h2>
 <ul>
-<li style={{textAlign:'left',marginLeft:'250px'}}>A text editor, like Notepad, to write C code</li>
-<li style={{textAlign:'left',marginLeft:'250px'}}>A compiler, like GCC, to translate the C code into a
-language that the computer will understand</li></ul>
+<li style={{textAlign:'left',marginLeft:'250px'}}>Java is a popular programming language.</li>
+<li style={{textAlign:'left',marginLeft:'250px'}}>Java is used to develop mobile apps, web apps, desktop apps, games and much more.</li></ul>
 There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
 
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>C Install IDE</h2>
-<ul>An IDE (Integrated Development Environment) is used to edit AND compile the code.
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>What is Java?
+</h2>
+<ul>Java is a popular programming language, created in 1995.
 
-Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.</ul>
+It is owned by Oracle, and more than 3 billion devices run Java. </ul>
 
-<ul>Note: Web-based IDE's can work as well, but functionality is limited.</ul>
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Dev C++</h2>
-You can find the latest version  of Dev C++. Click Download button  which will install the text editor with a compiler.
+<ul>It is used for:
+  <li>
+  Mobile applications (specially Android apps)  </li>
 
+ <li>  Desktop applications  </li>
 
+   <li>Web applications  </li>
+
+ <li>  Web servers and application servers  </li>
+
+<li>   Games  </li>
+
+   <li> Database connection  </li>
+
+  <li>  And much, much more!  </li>
+
+</ul>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Why Use Java?</h2>
+<li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+<li>It is one of the most popular programming language in the world</li>
+<li>It has a large demand in the current job market</li>
+<li>It is easy to learn and simple to use</li>
+<li>It is open-source and free</li>
+<li>It is secure, fast and powerful</li>
+<li>It has a huge community support (tens of millions of developers)</li>
+<li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+<li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
 </p>
 
-<a href="https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_setup.exe/download"><Button style={{backgroundColor:'#662d91',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+<a href=""><Button style={{backgroundColor:'#03C03C',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Download now <DownloadIcon sx={{fontSize:'40px'}}/>
 </Button></a>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
 
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn C </h2>
-Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn C.
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn JAVA </h2>
+Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn .
 </p>
-<a href="https://www.youtube.com/watch?v=i0ovgS-jCQ8"><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+<a href=""><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Youtube link <YouTubeIcon sx={{fontSize:'50px'}}/>
 </Button></a>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
@@ -270,7 +288,7 @@ Have a Glance at this youTube Channel. Click YouTube button to watch the video a
 <h2 style={{textAlign:'left',fontFamily:'monospace'}}> Click here to Download Material </h2>
 You can have full C programming Notes here. Click Download Notes button to get the notes and learn C.
 </p>
-<a href="https://drive.google.com/file/d/1UJUtN06VBfSe62Alk69CfTnrXenAPG1o/view?usp=drive_link"><Button style={{backgroundColor:'#800080',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+<a href=""><Button style={{backgroundColor:'#9ACD32',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Download Notes <CloudDownloadIcon sx={{fontSize:'50px'}}/>
 </Button></a>
         </div>

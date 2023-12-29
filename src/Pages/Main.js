@@ -21,6 +21,7 @@ import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -35,6 +36,7 @@ const Search = styled('div')(({ theme }) => ({
     marginLeft: theme.spacing(3),
     width: 'auto',
   },
+  
 }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -102,14 +104,18 @@ export default function Main() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
+
       <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
       <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
     </Menu>
+    
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
+    
     <Menu
+    
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
         vertical: 'top',
@@ -124,20 +130,31 @@ export default function Main() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      
      
+    
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
-          size="large"
+          size="50px"
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
           aria-haspopup="true"
           color="inherit"
+          
         >
-         
-        
+          <AccountCircle />
         </IconButton>
         <p>Profile</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton
+          size="large"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <LogoutSharpIcon/>
+          
+        </IconButton>
+        <p>Logout</p>
       </MenuItem>
     </Menu>
   );
@@ -167,8 +184,22 @@ export default function Main() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-           
-        
+          <a href="/home">
+          <IconButton
+          sx={{color:"white"}}
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              
+              aria-haspopup="true"
+              
+              color="white"
+            >  
+              <HomeRoundedIcon/>
+            </IconButton>
+          </a>
+         
+    
             <IconButton
               size="large"
               edge="end"
@@ -177,8 +208,7 @@ export default function Main() {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
-            >
-              <a href='/home'><HomeRoundedIcon sx={{color:'white'}}/></a> 
+            >  
               <AccountCircle />
             </IconButton>
           </Box>
@@ -193,6 +223,7 @@ export default function Main() {
             >
               <MoreIcon />
             </IconButton>
+            
           </Box>
         </Toolbar>
       </AppBar>

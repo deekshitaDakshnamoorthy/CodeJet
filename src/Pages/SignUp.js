@@ -41,7 +41,7 @@ export default function SignUp() {
   };
 
   return (
-    <div style={{backgroundColor:'skyblue',padding:'95px',paddingTop:'5px'}}>
+    <div style={{backgroundColor:'#318CE7',padding:'95px',paddingTop:'5px'}}>
 
     
     <ThemeProvider theme={defaultTheme}>
@@ -54,12 +54,15 @@ export default function SignUp() {
             flexDirection: 'column',
             alignItems: 'center',
             backgroundColor:'#A4DDED',
+            padding:'50px',
+            borderRadius:'30px'
+
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography sx={{fontFamily:'cursive',fontSize:'30px'}} component="h1" variant="h5">
             Sign up
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
