@@ -19,7 +19,7 @@ padding: '50px',
 <Grid container spacing={3}> 
 {/* First Row */} 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px' }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px',marginBottom:'80px' ,marginRight:'30px'}}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -41,7 +41,7 @@ Get Start
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px',marginRight:'30px'  }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -65,7 +65,7 @@ Get Start
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px',marginRight:'30px'  }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -80,14 +80,14 @@ Learn JAVASCRIPT
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/js"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px' }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px' ,marginRight:'30px'}}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -102,7 +102,7 @@ Learn HTML
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/html"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
@@ -110,7 +110,7 @@ Get Start
 </Grid> 
 {/* Second Row */} 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px' ,marginBottom:'80px' ,marginRight:'30px'}}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -127,14 +127,14 @@ Learn C++
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/cplus"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345 ,borderRadius:'30px' }}> 
+<Card sx={{ maxWidth: 345 ,borderRadius:'30px',marginRight:'30px' }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -152,14 +152,14 @@ Learn Css
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/css"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345 ,borderRadius:'30px' }}> 
+<Card sx={{ maxWidth: 345 ,borderRadius:'30px' ,marginRight:'30px'}}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -177,14 +177,14 @@ Learn PYTHON
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/python"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px',marginRight:'30px'  }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -199,15 +199,15 @@ Learn REACT
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/react"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
-{/* Second Row */} 
+{/* Third Row */} 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345 ,borderRadius:'30px' }}> 
+<Card sx={{ maxWidth: 345 ,borderRadius:'30px',marginBottom:'80px',marginRight:'30px' }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -222,14 +222,14 @@ Learn PHP
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/php"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px',marginRight:'30px'  }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -246,14 +246,14 @@ Learn BOOTSTARP
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/bootstarp"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}>
+<Card sx={{ maxWidth: 345,borderRadius:'30px' ,marginRight:'30px' }}>
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -272,14 +272,14 @@ Learn ANGULAR
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/angular"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
 </Card> 
 </Grid> 
 <Grid item xs={6} sm={3}> 
-<Card sx={{ maxWidth: 345,borderRadius:'30px'  }}> 
+<Card sx={{ maxWidth: 345,borderRadius:'30px' ,marginRight:'30px' }}> 
 <CardActionArea> 
 <CardMedia 
 component="img" 
@@ -296,7 +296,7 @@ Learn TYPESCRIPT
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/c"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/typescript"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 

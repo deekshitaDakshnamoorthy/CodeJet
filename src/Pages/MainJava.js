@@ -271,16 +271,20 @@ It is owned by Oracle, and more than 3 billion devices run Java. </ul>
 <li>Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
 <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
 </p>
+<p style={{marginLeft:'70px',textAlign:'left'}}>
 
-<a href=""><Button style={{backgroundColor:'#03C03C',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Eclipse</h2>
+</p>
+<a href="https://www.eclipse.org/downloads/"><Button style={{backgroundColor:'#03C03C',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Download now <DownloadIcon sx={{fontSize:'40px'}}/>
 </Button></a>
+
 <p style={{marginLeft:'70px',textAlign:'left'}}>
 
 <h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn JAVA </h2>
 Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn .
 </p>
-<a href=""><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+<a href="https://www.youtube.com/watch?v=hBh_CC5y8-s"><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Youtube link <YouTubeIcon sx={{fontSize:'50px'}}/>
 </Button></a>
 <p style={{marginLeft:'70px',textAlign:'left'}}>

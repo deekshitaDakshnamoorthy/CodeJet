@@ -20,6 +20,8 @@ import StickyFooter from './StickyFooter';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import { Button } from '@mui/material';
+import LogoutButton from './LogoutButton';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -146,14 +148,9 @@ export default function Main() {
         <p>Profile</p>
       </MenuItem>
       <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <LogoutSharpIcon/>
+        
           
-        </IconButton>
+        
         <p>Logout</p>
       </MenuItem>
     </Menu>
@@ -183,48 +180,12 @@ export default function Main() {
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <a href="/home">
-          <IconButton
-          sx={{color:"white"}}
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              
-              aria-haspopup="true"
-              
-              color="white"
-            >  
-              <HomeRoundedIcon/>
-            </IconButton>
-          </a>
-         
-    
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >  
-              <AccountCircle />
-            </IconButton>
-          </Box>
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
-            
-          </Box>
+<a href="/profile"><Button variant="contained" >
+              Profile
+            </Button> </a>
+            <a href="/home"><Button variant="contained" >
+              Logout
+            </Button> </a>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

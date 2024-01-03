@@ -13,6 +13,15 @@ import StickyFooter from './Pages/StickyFooter';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import MainCplus from './Pages/MainCplus';
 import MainPython from './Pages/MainPython';
+import MainHtml from './Pages/MainHtml';
+import MainCss from './Pages/MainCss';
+import MainReact from './Pages/MainReact';
+import MainPhp from './Pages/MainPhp';
+import MainBoot from './Pages/MainBoot';
+import MainAngular from './Pages/MainAngular';
+import MainTypescript from './Pages/MainTypescript';
+import Profile from './Pages/Profile';
+import LogoutButton from './Pages/LogoutButton';
 
 
 function App() {
@@ -32,6 +41,15 @@ function App() {
         <Route path='/js' element={<MainJavaScript/>  }/>
         <Route path='/cplus' element={<MainCplus/>  }/>
         <Route path='/python' element={<MainPython/>  }/>
+        <Route path='/html' element={<MainHtml/>  }/>
+        <Route path='/css' element={<MainCss/>  }/>
+        <Route path='/react' element={<MainReact/>  }/>
+        <Route path='/php' element={<MainPhp/>  }/>
+        <Route path='/bootstrap' element={<MainBoot/>  }/>
+        <Route path='/angular' element={<MainAngular/>  }/>
+        <Route path='/typescript' element={<MainTypescript/>  }/>
+        <Route path='/profile' element={<Profile/> }/>
+        
 
       </Routes>
       

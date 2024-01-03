@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import StickyFooter from './StickyFooter';
 import { Link } from 'react-router-dom';
+import LoginButton from './LoginButton';
 
 const ButtonAppBar = () => {
   const backgroundImage = 'https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; // Replace with your image URL
@@ -30,13 +31,9 @@ const ButtonAppBar = () => {
               <Button variant="contained">About Us</Button>
             </Link>
 
+            <LoginButton/>
             
-            <Link to="/signup" style={{ color: 'white' }}>
-              <Button variant="contained">Sign Up</Button>
-            </Link>
-            <Link to="/signin" style={{ color: 'white' }}>
-              <Button variant="contained">Login</Button>
-            </Link>
+        
           </Toolbar>
         </AppBar>
       </Box>
