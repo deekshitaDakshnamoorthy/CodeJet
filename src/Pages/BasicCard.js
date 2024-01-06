@@ -241,12 +241,12 @@ alt="C "
 /> 
 <CardContent> 
 <Typography gutterBottom variant="h5" component="div"> 
-Learn BOOTSTARP 
+Learn BOOTSTRAP 
 </Typography> 
 </CardContent> 
 </CardActionArea> 
 <CardActions> 
-<a href="/bootstarp"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
+<a href="/bootstrap"><Button sx={{fontSize:'20px',fontFamily:'revert-layer',color:"#012169"}} size="small" color="primary"> 
 Get Start 
 </Button></a> 
 </CardActions> 
@@ -288,6 +288,7 @@ image='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIA AAAe1
 gNzJDARr+aehM/MVBZgi20uUtpcNmCE7a3gMvhouDzRAM0bzd0EyxGYIXR9l1m6I/74jNcAkZR uOwfhO8IzJDeOYdRYe0bUPFZqgXsGE0HQXu+daKg81QOQxtNQ5bNVVshsKMnYpR79iiHtEZqpH b0PY4A3Pt9xGdITyr+ab/JuO/kk/ju+WNho7e9IvprLimseIz1KJxay2f7MMd8RmKeNtkaBkPQ x0RGgZuHx4G3hDbd3EQGoYG9g8vIfWI0VDEr2GK0SFggERpKIxz8+KSXtE00cFpqA0YGAbpNAR McRpaxcCMKEvmn5MjNRTavctWZ+JTxGpoa7FpbnPG+9rdUtEa2vsMwvOGViOnAGJDodLw/iZ6v W+2iZe7GdqWOqpv97pwJX6hNrTVON/AWd4Au3vmYni5p6G9W7EMdYQTatAblunsk6Z07xNTcGm M37B0TDtB9Qi+CQXD0jGehfQ50DYcDcNyy1eOmtPBDkBnQ8XQouSxcbIKVCIhw+oL2dDpjOsep AxLR7HxzuVEPS+FlmHlOPM4bmtTcHKGZacj3Ing49r7EDQs56uFq19d1XpTkoa+1ePg8otI1FA I49jBqeVPkTUUcgsa1jJT6Bo6QuO1roawYbyDDPtkDHXjNqEW0PwmI/I9tGNe0phEA+ai1rJtc Roqvc3LMKj/VeCWPwlDbUan2nEfuaugaqjl+rPk7iN3FQZaFKP/HpYLpLPiph5FXYA9DfK+VOm f0cNufTX0Bbwbjns81PPXy4VR13ncRyswcjNBPKfRcvEOtLq145kJBl5C1RaIeAz1Gs73yt+gv TNtHDvhtbAwHkPjDIkmaW0nWyk4DzXKEa8PHbmzVbEn63n8+fAkrZU0r67oKeY1vvYmtL0vF4V QsZRKFG+JOwK+wxyn8WclWrJ+t9sFz29+sap3vYgMxRUJGC5qYwUuw+qw1k1AT7rBZCj0/kZDa DWCylDI0HQvmCk0jcVl6DmrHgK42kJmqMMz2uoswfdAZijE3D3wN1Af7HEauuKgjRwcYR18hkI ughNMAgQxGtplsOdUiYNkft9nDHm5PdZml0bXVWPuzPlCaihEXFzTp45dq+SqODgN7YJ/GPokH qIZtGVT3fcC2mp/13ASCq9htdW79R+9mCaLxpNejzCEesJeq70nrdT+deyoyfdklP6bp0aI+PR snXNk68PYWhlT7JbJIctXHxHgPDv0liNh1/shB4NIPO1aq9h+SnOj0iJNhSo/sTjIroSE4SfXP 
 8xbEDNsBRvShw3pw4b0YUP6sCF92JA+/x/D+6d/YsF8GM5v+N+McDM/GU67z8u0Mnxynt/wP0b 2ivm6ONYKAAAAAElFTkSuQmCC' 
 alt="C " 
+
 /> 
 <CardContent> 
 <Typography gutterBottom variant="h5" component="div"> 

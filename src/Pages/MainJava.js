@@ -108,8 +108,10 @@ export default function MainC() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
- <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
-    </Menu>
+      <button onClick={() => { window.location.href = '/home'; }} style={{ border: 'none', background: 'none', font: 'inherit', cursor: 'pointer', outline: 'inherit' }}>
+    Logout
+    <LogoutSharpIcon />
+  </button>    </Menu>
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
@@ -171,15 +173,7 @@ export default function MainC() {
           >
             DeepLearn
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+       
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             

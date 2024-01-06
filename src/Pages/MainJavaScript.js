@@ -108,7 +108,13 @@ export default function MainC() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
- <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
+      <MenuItem onClick={handleMenuClose}>
+  <button onClick={() => { window.location.href = '/home'; }} style={{ border: 'none', background: 'none', font: 'inherit', cursor: 'pointer', outline: 'inherit' }}>
+    Logout
+    <LogoutSharpIcon />
+  </button>
+</MenuItem>
+
     </Menu>
   );
 
@@ -158,9 +164,9 @@ export default function MainC() {
   );
 
   return (
-    <div style={{backgroundColor:'#E6E6FA'}}>
+    <div style={{backgroundColor:'#ffcdd2'}}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor:'#452c63'}}>
+      <AppBar position="static" sx={{backgroundColor:'#b71c1c'}}>
         <Toolbar>
           
           <Typography
@@ -171,15 +177,7 @@ export default function MainC() {
           >
             DeepLearn
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+     
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             
@@ -228,48 +226,13 @@ export default function MainC() {
       {renderMenu}
     </Box>
     <Typography sx={{paddingBottom:'50px'}}>
-        <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> C Tutorial:</h1>
+        <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> JAVASCRIPT Tutorial:</h1>
         <div>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Get Started With C</h2>
-<h4 style={{textAlign:'left'}}>To start using C, you need two things:</h4>
-<ul>
-<li style={{textAlign:'left',marginLeft:'250px'}}>A text editor, like Notepad, to write C code</li>
-<li style={{textAlign:'left',marginLeft:'250px'}}>A compiler, like GCC, to translate the C code into a
-language that the computer will understand</li></ul>
-There are many text editors and compilers to choose from. In this tutorial, we will use an IDE (see below).
-
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>C Install IDE</h2>
-<ul>An IDE (Integrated Development Environment) is used to edit AND compile the code.
-
-Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.</ul>
-
-<ul>Note: Web-based IDE's can work as well, but functionality is limited.</ul>
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Dev C++</h2>
-You can find the latest version  of Dev C++. Click Download button  which will install the text editor with a compiler.
 
 
 </p>
 
-<a href="https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_setup.exe/download"><Button style={{backgroundColor:'#662d91',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
-  Download now <DownloadIcon sx={{fontSize:'40px'}}/>
-</Button></a>
-<p style={{marginLeft:'70px',textAlign:'left'}}>
-
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn C </h2>
-Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn C.
-</p>
-<a href="https://www.youtube.com/watch?v=i0ovgS-jCQ8"><Button style={{backgroundColor:' #CD201F',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
-  Youtube link <YouTubeIcon sx={{fontSize:'50px'}}/>
-</Button></a>
-<p style={{marginLeft:'70px',textAlign:'left'}}>
-
-<h2 style={{textAlign:'left',fontFamily:'monospace'}}> Click here to Download Material </h2>
-You can have full C programming Notes here. Click Download Notes button to get the notes and learn C.
-</p>
-<a href="https://drive.google.com/file/d/1UJUtN06VBfSe62Alk69CfTnrXenAPG1o/view?usp=drive_link"><Button style={{backgroundColor:'#800080',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
-  Download Notes <CloudDownloadIcon sx={{fontSize:'50px'}}/>
-</Button></a>
         </div>
     </Typography>
 

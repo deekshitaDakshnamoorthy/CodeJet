@@ -17,11 +17,12 @@ import MainHtml from './Pages/MainHtml';
 import MainCss from './Pages/MainCss';
 import MainReact from './Pages/MainReact';
 import MainPhp from './Pages/MainPhp';
-import MainBoot from './Pages/MainBoot';
 import MainAngular from './Pages/MainAngular';
 import MainTypescript from './Pages/MainTypescript';
+import MainBootstrap from './Pages/MainBootstrap';
 import Profile from './Pages/Profile';
 import LogoutButton from './Pages/LogoutButton';
+import Profile1 from './Pages/Profile1';
 
 
 function App() {
@@ -45,18 +46,19 @@ function App() {
         <Route path='/css' element={<MainCss/>  }/>
         <Route path='/react' element={<MainReact/>  }/>
         <Route path='/php' element={<MainPhp/>  }/>
-        <Route path='/bootstrap' element={<MainBoot/>  }/>
         <Route path='/angular' element={<MainAngular/>  }/>
+        <Route path='/bootstrap' element={<MainBootstrap/>  }/>
+
         <Route path='/typescript' element={<MainTypescript/>  }/>
-        <Route path='/profile' element={<Profile/> }/>
-        
+        {/* <Route path='/profile' element={<Profile/> }/> */}
+        <Route path='/profile1' element={<Profile1/>}/>
 
       </Routes>
       
       
       
       </BrowserRouter>   
-     
+      
 {/* <Demo/> */}
 {/* <SignIn/> */}
  {/* <MainC/>    */}

@@ -31,7 +31,9 @@ const ButtonAppBar = () => {
               <Button variant="contained">About Us</Button>
             </Link>
 
-            <LoginButton/>
+  <Button variant="contained">
+    <LoginButton />
+  </Button>
             
         
           </Toolbar>

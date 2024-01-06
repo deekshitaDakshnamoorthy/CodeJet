@@ -157,9 +157,9 @@ export default function Main() {
   );
 
   return (
-    <div style={{backgroundColor:'skyblue'}}>
+    <div style={{backgroundColor:'#FF78C4'}}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor:"#0F0F0F"}}>
         <Toolbar>
           
           <Typography
@@ -180,7 +180,10 @@ export default function Main() {
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
-<a href="/profile"><Button variant="contained" >
+          <a href="/main"><Button variant="contained" >
+              Dashboard
+            </Button> </a>
+<a href="/profile1"><Button variant="contained" >
               Profile
             </Button> </a>
             <a href="/home"><Button variant="contained" >

@@ -164,9 +164,9 @@ export default function MainC() {
   );
 
   return (
-    <div style={{backgroundColor:'#b3e5fc'}}>
+    <div style={{backgroundColor:'#fff9c4'}}>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor:'#01579b'}}>
+      <AppBar position="static" sx={{backgroundColor:'#ffea00'}}>
         <Toolbar>
           
           <Typography
@@ -226,7 +226,7 @@ export default function MainC() {
       {renderMenu}
     </Box>
     <Typography sx={{paddingBottom:'50px'}}>
-        <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> PHP Tutorial:</h1>
+        <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> BOOTSTRAP Tutorial:</h1>
         <div>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
 

@@ -106,7 +106,6 @@ image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6kpgG3wWWn9jvysUWK
         <CardMedia
           component="img"
           height="200"
-
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGYlM4LJxyYdOj9-BG3B5av-totzPyp8l9w&usqp=CAU"
           alt="green iguana"
         />

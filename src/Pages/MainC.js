@@ -108,8 +108,10 @@ export default function MainC() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
- <a href='/home'>   <MenuItem onClick={handleMenuClose}>Logout <LogoutSharpIcon/> </MenuItem></a>
-    </Menu>
+      <button onClick={() => { window.location.href = '/home'; }} style={{ border: 'none', background: 'none', font: 'inherit', cursor: 'pointer', outline: 'inherit' }}>
+    Logout
+    <LogoutSharpIcon />
+  </button>    </Menu>
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
@@ -171,15 +173,7 @@ export default function MainC() {
           >
             DeepLearn
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+        
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             
@@ -245,6 +239,7 @@ There are many text editors and compilers to choose from. In this tutorial, we w
 Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all free, and they can be used to both edit and debug C code.</ul>
 
 <ul>Note: Web-based IDE's can work as well, but functionality is limited.</ul>
+
 <h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Dev C++</h2>
 You can find the latest version  of Dev C++. Click Download button  which will install the text editor with a compiler.
 
@@ -254,6 +249,69 @@ You can find the latest version  of Dev C++. Click Download button  which will i
 <a href="https://sourceforge.net/projects/dev-cpp/files/Binaries/Dev-C%2B%2B%204.9.9.2/devcpp-4.9.9.2_setup.exe/download"><Button style={{backgroundColor:'#662d91',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
   Download now <DownloadIcon sx={{fontSize:'40px'}}/>
 </Button></a>
+
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+
+<h2 style={{fontFamily:'monospace'}}> Statements</h2>
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+It is important that you end the statement with a semicolon ;
+
+If you forget the semicolon (;), an error will occur and the program will not run
+<h2 style={{fontFamily:'monospace'}}> Many Statements</h2>
+Most C programs contain many statements.
+<h3>Example explained</h3>
+From the example above, we have three statements:
+<ol>
+<li>printf("Hello World!");
+</li>
+<li>printf("Have a good day!");
+
+</li>
+<li>return 0;
+</li>
+</ol>
+The first statement is executed first (print "Hello World!" to the screen).
+Then the second statement is executed (print "Have a good day!" to the screen).
+And at last, the third statement is executed (end the C program successfully).
+
+<h2 style={{fontFamily:'monospace'}}>New Lines
+</h2>
+To insert a new line, you can use the \n character:
+You can also output multiple lines with a single printf() function. However, this could make the code harder to read:
+<h3>What is \n exactly?
+</h3>
+The newline character (\n) is called an escape sequence, and it forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.
+<h2 style={{fontFamily:'monospace'}}>Comments in C
+</h2>
+
+<ul>Comments can be used to explain code, and to make it more readable. It can also be used to prevent execution when testing alternative code.
+</ul>
+<ul>Comments can be singled-lined or multi-lined.</ul>
+<h2 style={{fontFamily:'monospace'}}>  Single-line Comments
+</h2>
+Single-line comments start with two forward slashes (//).
+
+Any text between // and the end of the line is ignored by the compiler (will not be executed).
+<h2 style={{fontFamily:'monospace'}}>
+C Multi-line Comments
+</h2>
+Multi-line comments start with /* and ends with */.
+
+Any text between /* and */ will be ignored by the compiler:
+
+
+
+
+
+
+
+
+
+</p>
+
 <p style={{marginLeft:'70px',textAlign:'left'}}>
 
 <h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn C </h2>
