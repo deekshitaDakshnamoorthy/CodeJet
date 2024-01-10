@@ -26,7 +26,7 @@ const AboutUs = () => {
    <Toolbar>
  
      <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign:'left' }}>
-       Deep Learn
+       Code Jet
      </Typography>
      <a href="/home" style={{color:"white"}}> <Button variant="contained">Home</Button></a> 
 
@@ -45,7 +45,7 @@ const AboutUs = () => {
 
     <div style={{backgroundColor:'skyblue', padding:'10px'}}>
       <h1 style={{color:'darkblue',fontSize:'50px'}}>About Us</h1>
-      <h2>Welcome to our learning portal!</h2>
+      <h2>Welcome to our Code Jet!</h2>
       <p style={{fontSize:'20px',fontFamily:'cursive'}}>
         We are passionate about education and
         committed to providing high-quality learning resources to help you

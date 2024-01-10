@@ -47,7 +47,7 @@ export default function StickyFooter() {
         >
           <Container maxWidth="sm">
             <Typography variant="body1">
-              All Rights Reserved. Deep Learn Powered by Deeksh.
+              All Rights Reserved. Code Jet Powered by Deeksh.
             </Typography>
             <Copyright />
           </Container>

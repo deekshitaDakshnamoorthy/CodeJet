@@ -107,7 +107,7 @@ export default function MainC() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem>
+     <a href='/profile1' > <MenuItem onClick={handleMenuClose}>Profile <AccountCircle/></MenuItem> </a>
       <button onClick={() => { window.location.href = '/home'; }} style={{ border: 'none', background: 'none', font: 'inherit', cursor: 'pointer', outline: 'inherit' }}>
     Logout
     <LogoutSharpIcon />
@@ -171,7 +171,7 @@ export default function MainC() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            DeepLearn
+            Code Jet
           </Typography>
         
           <Box sx={{ flexGrow: 1 }} />

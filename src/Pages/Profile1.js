@@ -19,7 +19,7 @@ function Profile1() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            DeepLearn
+            Code Jet
           </Typography>
        
           <Box sx={{ flexGrow: 1 }} />

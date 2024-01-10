@@ -21,7 +21,7 @@ const ButtonAppBar = () => {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left' }}>
-              Deep Learn
+              Code Jet
             </Typography>
             <Link to="/home" style={{ color: 'white' }}>
               <Button variant="contained">Home</Button>
@@ -31,9 +31,8 @@ const ButtonAppBar = () => {
               <Button variant="contained">About Us</Button>
             </Link>
 
-  <Button variant="contained">
     <LoginButton />
-  </Button>
+  
             
         
           </Toolbar>
@@ -52,7 +51,7 @@ const ButtonAppBar = () => {
         }}
       >
         <div>
-        <h1 style={{color:'white',fontSize:'90px'}}> Learn to Code from Deep Learn!!</h1>
+        <h1 style={{color:'white',fontSize:'90px'}}> Learn to Code from Code Jet!!</h1>
 
           <Typography variant="h3" component="div" style={{ color: 'Darkblue',fontFamily:'serif',padding:'20px' }}>
             Explore Now

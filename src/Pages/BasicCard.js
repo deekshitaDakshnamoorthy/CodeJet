@@ -3,7 +3,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent'; 
 import CardMedia from '@mui/material/CardMedia'; 
 import Typography from '@mui/material/Typography'; 
-import { Button, CardActionArea, CardActions, Grid } from '@mui/material'; import './BasicCard.css'; 
+import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
+ import './BasicCard.css'; 
 export default function BasicCard() { 
 return ( 
 <div 

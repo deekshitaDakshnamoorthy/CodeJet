@@ -23,13 +23,14 @@ import MainBootstrap from './Pages/MainBootstrap';
 import Profile from './Pages/Profile';
 import LogoutButton from './Pages/LogoutButton';
 import Profile1 from './Pages/Profile1';
+import Admin from './Pages/Admin';
 
 
 function App() {
   return (
     <div className="App">
 {/* <BasicCard/> */}
-         <BrowserRouter>
+          {/* <BrowserRouter>
       <Routes>
         <Route index element={<Demo/>}/>
         <Route path='/signin' element={<SignIn/>}/>
@@ -50,19 +51,19 @@ function App() {
         <Route path='/bootstrap' element={<MainBootstrap/>  }/>
 
         <Route path='/typescript' element={<MainTypescript/>  }/>
-        {/* <Route path='/profile' element={<Profile/> }/> */}
         <Route path='/profile1' element={<Profile1/>}/>
+        <Route path='/admin' element={<Admin/>}/>
 
       </Routes>
       
       
       
-      </BrowserRouter>   
+      </BrowserRouter>      */}
       
 {/* <Demo/> */}
 {/* <SignIn/> */}
  {/* <MainC/>    */}
-
+<Admin/>
     </div>
   );
 }

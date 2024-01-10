@@ -4,7 +4,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
@@ -20,8 +19,14 @@ import StickyFooter from './StickyFooter';
 import LogoutSharpIcon from '@mui/icons-material/LogoutSharp';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import { Button } from '@mui/material';
+
 import LogoutButton from './LogoutButton';
+import Card from '@mui/material/Card'; 
+import CardContent from '@mui/material/CardContent'; 
+import CardMedia from '@mui/material/CardMedia'; 
+import Typography from '@mui/material/Typography'; 
+import { Button, CardActionArea, CardActions, Grid } from '@mui/material'; 
+import Uploads from './Uploads';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -65,7 +70,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function Main() {
+export default function Admin() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -157,7 +162,7 @@ export default function Main() {
   );
 
   return (
-    <div style={{backgroundColor:'#FF78C4'}}>
+    <div style={{backgroundColor:'#A9A9A9'}}>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{backgroundColor:"#0F0F0F"}}>
         <Toolbar>
@@ -170,18 +175,10 @@ export default function Main() {
           >
             Code Jet
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+        
           <Box sx={{ flexGrow: 1 }} />
-          <a href="/main"><Button variant="contained" >
-              Dashboard
+          <a href="/admin"><Button variant="contained" >
+              Admin
             </Button> </a>
 <a href="/profile1"><Button variant="contained" >
               Profile
@@ -194,12 +191,8 @@ export default function Main() {
       {renderMobileMenu}
       {renderMenu}
     </Box>
-    <Typography>
-      <h3 style={{fontFamily:"revert-laye",fontSize:'50px'}}>
-        Don't Just Watch. Let's Start to Learn!
-      </h3>
-    </Typography>
-    <BasicCard/>
+
+<Uploads/>  
     <StickyFooter/>
     </div>
   );
