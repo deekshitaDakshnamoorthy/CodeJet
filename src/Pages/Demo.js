@@ -23,6 +23,9 @@ const ButtonAppBar = () => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left' }}>
               Code Jet
             </Typography>
+            <Link to="/admin" style={{ color: 'white' }}>
+              <Button variant="contained">Admin</Button>
+            </Link>
             <Link to="/home" style={{ color: 'white' }}>
               <Button variant="contained">Home</Button>
             </Link>

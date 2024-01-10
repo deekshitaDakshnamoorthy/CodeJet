@@ -14,7 +14,10 @@ paddingTop: '300px',
 display: 'flex', 
 alignItems: 'center', 
 justifyContent: 'center', 
-padding: '50px', 
+padding: '80px', 
+paddingBottom:"50px",
+paddingTop:"180px"
+
 }} 
 > 
 <Grid container spacing={3}> 

@@ -24,7 +24,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-
+import "./styles.css";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -273,8 +274,14 @@ It is owned by Oracle, and more than 3 billion devices run Java. </ul>
   Download now <DownloadIcon sx={{fontSize:'40px'}}/>
 </Button></a>
 
-<p style={{marginLeft:'70px',textAlign:'left'}}>
 
+
+
+
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+<h2 style={{fontFamily:'monospace'}}>Preview video
+</h2>
+<YoutubeEmbed embedId="0cwk9UMLnWE?si=iYYRROynmCLXtjYd" />
 <h2 style={{textAlign:'left',fontFamily:'monospace'}}> Available YouTube video to Learn JAVA </h2>
 Have a Glance at this youTube Channel. Click YouTube button to watch the video and learn .
 </p>

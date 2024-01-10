@@ -24,7 +24,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-
+import "./styles.css";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -229,9 +230,88 @@ export default function MainC() {
         <h1 style={{textAlign:'left',fontFamily:'serif',fontSize:'50px',marginLeft:'70px'}}> PYTHON Tutorial:</h1>
         <div>
 <p style={{marginLeft:'70px',textAlign:'left'}}>
+<h2
+style={{textAlign:'left',fontFamily:'monospace'}}>Get Started With PYTHON</h2>
+<ul>
+<li style={{textAlign:'left',marginLeft:'250px'}}>Python is a popular programming language.
 
+</li>
+<li style={{textAlign:'left',marginLeft:'250px'}}>Python can be used on a server to create web applications.
+
+</li></ul>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>What is Python?
+</h2>
+
+<ul>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+</ul>
+
+<ul>It is used for:
+  <li>
+  Mobile applications (specially Android apps)  </li>
+
+ <li>web development (server-side),
+  </li>
+
+   <li>software development,
+  </li>
+
+ <li>  mathematics, </li>
+
+<li> system scripting.  </li>
+
+</ul>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>What can Python do?</h2>
+<li>Python can be used on a server to create web applications.
+</li>
+<li> Python can be used alongside software to create workflows.</li>
+<li>It has a large demand in the current job market</li>
+<li>It is easy to learn and simple to use</li>
+<li>Python can connect to database systems. It can also read and modify files.
+</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+<li>Python can be used for rapid prototyping, or for production-ready software development.
+</li>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Why Python?
+</h2>
+<li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+<li>Python has a simple syntax similar to the English language.
+</li>
+<li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+</li>
+<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+<li>Python can be treated in a procedural way, an object-oriented way or a functional way.
+</li>
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Good to know
+</h2>
+<li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+<li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Python Syntax compared to other programming languages
+
+</h2>
+<li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+</li>
+<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+</li>
+<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
 
 </p>
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+
+<h2 style={{textAlign:'left',fontFamily:'monospace'}}>Click here to Download Eclipse</h2>
+</p>
+<a href="https://www.python.org/downloads/"><Button style={{backgroundColor:'	#844b11',fontSize:'30px',fontFamily:'cursive'}} variant="contained" disableElevation>
+  Download now <DownloadIcon sx={{fontSize:'40px'}}/>
+</Button></a>
+
+<p style={{marginLeft:'70px',textAlign:'left'}}>
+
+<h2 style={{fontFamily:'monospace'}}>Preview video
+</h2>
+<YoutubeEmbed embedId="hEgO047GxaQ?si=tyo9dPVbNUl8H9jt" />
+</p>
+
 
         </div>
     </Typography>

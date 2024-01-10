@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
 {/* <BasicCard/> */}
-          {/* <BrowserRouter>
+           <BrowserRouter>
       <Routes>
         <Route index element={<Demo/>}/>
         <Route path='/signin' element={<SignIn/>}/>
@@ -58,12 +58,12 @@ function App() {
       
       
       
-      </BrowserRouter>      */}
+      </BrowserRouter>      
       
 {/* <Demo/> */}
 {/* <SignIn/> */}
  {/* <MainC/>    */}
-<Admin/>
+{/* <Admin/> */}
     </div>
   );
 }

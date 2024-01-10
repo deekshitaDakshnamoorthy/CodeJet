@@ -24,7 +24,8 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-
+import "./styles.css";
+import YoutubeEmbed from "./YoutubeEmbed";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -250,6 +251,9 @@ You can find the latest version  of Dev C++. Click Download button  which will i
   Download now <DownloadIcon sx={{fontSize:'40px'}}/>
 </Button></a>
 
+
+
+
 <p style={{marginLeft:'70px',textAlign:'left'}}>
 
 <h2 style={{fontFamily:'monospace'}}> Statements</h2>
@@ -276,6 +280,15 @@ From the example above, we have three statements:
 The first statement is executed first (print "Hello World!" to the screen).
 Then the second statement is executed (print "Have a good day!" to the screen).
 And at last, the third statement is executed (end the C program successfully).
+
+<h2 style={{fontFamily:'monospace'}}>Preview video
+</h2>
+<YoutubeEmbed embedId="aWPD3JQPahc?si=Lzmm9sHsmd2F6Vhe" />
+
+
+
+
+
 
 <h2 style={{fontFamily:'monospace'}}>New Lines
 </h2>
