@@ -1,7 +1,6 @@
 import './App.css';
 import AboutUs from './Pages/AboutUs';
 import BasicCard from './Pages/BasicCard';
-import MainJavaScript from './Pages/MainJavaScript';
 import DrawerAppBar from './Pages/Demo';
 import Demo from './Pages/Demo';
 import Main from './Pages/Main';
@@ -11,15 +10,9 @@ import SignIn from './Pages/SignIn';
 import SignUp from './Pages/SignUp';
 import StickyFooter from './Pages/StickyFooter';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import MainCplus from './Pages/MainCplus';
+
 import MainPython from './Pages/MainPython';
-import MainHtml from './Pages/MainHtml';
-import MainCss from './Pages/MainCss';
-import MainReact from './Pages/MainReact';
-import MainPhp from './Pages/MainPhp';
-import MainAngular from './Pages/MainAngular';
-import MainTypescript from './Pages/MainTypescript';
-import MainBootstrap from './Pages/MainBootstrap';
+
 import Profile from './Pages/Profile';
 import LogoutButton from './Pages/LogoutButton';
 import Profile1 from './Pages/Profile1';
@@ -40,17 +33,11 @@ function App() {
         <Route path='/main' element={<Main/>  }/>
         <Route path='/c' element={<MainC/>  }/>
         <Route path='/java' element={<MainJava/>  }/>
-        <Route path='/js' element={<MainJavaScript/>  }/>
-        <Route path='/cplus' element={<MainCplus/>  }/>
+       
+        
         <Route path='/python' element={<MainPython/>  }/>
-        <Route path='/html' element={<MainHtml/>  }/>
-        <Route path='/css' element={<MainCss/>  }/>
-        <Route path='/react' element={<MainReact/>  }/>
-        <Route path='/php' element={<MainPhp/>  }/>
-        <Route path='/angular' element={<MainAngular/>  }/>
-        <Route path='/bootstrap' element={<MainBootstrap/>  }/>
-
-        <Route path='/typescript' element={<MainTypescript/>  }/>
+       
+       
         <Route path='/profile1' element={<Profile1/>}/>
         <Route path='/admin' element={<Admin/>}/>
 
